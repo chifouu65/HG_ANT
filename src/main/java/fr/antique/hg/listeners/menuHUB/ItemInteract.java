@@ -3,8 +3,8 @@ package fr.antique.hg.listeners.menuHUB;
 import fr.antique.hg.HG;
 import fr.antique.hg.listeners.menuHUB.menu.HubItems;
 import fr.antique.hg.listeners.menuHUB.menu.NAVgui;
-import fr.antique.hg.listeners.menuHUB.minigames.InvItems;
-import fr.antique.hg.listeners.menuHUB.minigames.Kits;
+import fr.antique.hg.listeners.menuHUB.infos.InvItems;
+import fr.antique.hg.listeners.menuHUB.infos.Kits;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -39,7 +39,7 @@ public class ItemInteract implements Listener {
 
         if (e.getCurrentItem() == null) return;
 
-        if (e.getCurrentItem().equals(InvItems.MINI_GAMES.getItemStack())) {
+        if (e.getCurrentItem().equals(InvItems.KITS.getItemStack())) {
             Kits.KIT.open(player);
             player.sendMessage("§e INV KIT OPEN");
         }

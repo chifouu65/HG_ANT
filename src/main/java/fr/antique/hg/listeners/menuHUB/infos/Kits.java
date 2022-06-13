@@ -1,4 +1,4 @@
-package fr.antique.hg.listeners.menuHUB.minigames;
+package fr.antique.hg.listeners.menuHUB.infos;
 
 import fr.antique.hg.commons.utils.itembuilder.ItemBuilder;
 import fr.minuskube.inv.ClickableItem;

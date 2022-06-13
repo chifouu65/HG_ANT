@@ -1,7 +1,7 @@
 package fr.antique.hg.listeners.menuHUB.menu;
 
 import fr.antique.hg.commons.utils.itembuilder.ItemBuilder;
-import fr.antique.hg.listeners.menuHUB.minigames.InvItems;
+import fr.antique.hg.listeners.menuHUB.infos.InvItems;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -27,9 +27,13 @@ public class NAVgui implements InventoryProvider {
                     .addLoreLine(" ")
                         .toItemStack();
 
-        ItemStack MiniGames = InvItems.MINI_GAMES.getItemStack();
+        ItemStack infos = InvItems.PLAYER_INFOS.getItemStack();
 
-        inventoryContents.set(2,3,ClickableItem.empty(MiniGames));
+        ItemStack kits = InvItems.KITS.getItemStack();
+
+        inventoryContents.set(2,5,ClickableItem.empty(infos));
+
+        inventoryContents.set(2,3,ClickableItem.empty(kits));
 
         inventoryContents.fillBorders(ClickableItem.empty(placeHolder));
     }
