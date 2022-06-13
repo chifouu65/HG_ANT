@@ -1,0 +1,3 @@
+name: HG
+version: '${project.version}'
+main: fr.antique.hg.HG
